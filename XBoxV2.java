@@ -20,6 +20,6 @@ public class XBoxV2 {
         Runnable buttonYPressCallback = () -> doSomethingWithBY(xbox.getYButtonPressed());
 
         BooleanEvent buttonAPressEvent = xbox.a(new EventLoop().bind(buttonAPressCallback));
-        BooleanEvent buttonYPressEvent = xbox.a(new EventLoop().bind(buttonYPressCallback));
+        BooleanEvent buttonYPressEvent = xbox.y(new EventLoop().bind(buttonYPressCallback));
     };
 }
